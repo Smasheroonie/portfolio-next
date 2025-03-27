@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="h-1 w-8 rounded-full bg-primary"></div>
       <p className="text-lg font-medium">Software Developer</p>
       <div className="h-1 w-8 rounded-full bg-primary"></div>
-      <p className="max-w-[800px] text-lg text-muted-foreground md:text-xl">
+      <p className="max-w-[800px] text-center mx-10 text-lg text-muted-foreground md:text-xl">
         I craft responsive websites and robust applications that provide
         seamless user experiences. Specializing in development with React,
         TypeScript, SQL, C# and .NET.
@@ -28,15 +28,16 @@ export default function Hero() {
             className="flex justify-center items-center cursor-pointer"
           >
             <span className="font-bold">View Projects</span>{" "}
-            <ArrowRight className="ml-2 h-4 w-4" />
+            <ArrowRight className="ml-1 size-5" />
           </Link>
         </Button>
-        <div className="flex gap-4">
+        <div className="flex gap-4 justify-center">
           <Button asChild>
             <a
               href="https://github.com/Smasheroonie"
               target="_blank"
               rel="noopener noreferrer"
+              className="w-16 sm:w-auto"
             >
               <FaGithub className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
@@ -47,6 +48,7 @@ export default function Hero() {
               href="https://www.linkedin.com/in/lukenunogoncalves/"
               target="_blank"
               rel="noopener noreferrer"
+              className="w-16 sm:w-auto"
             >
               <FaLinkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>

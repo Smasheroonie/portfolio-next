@@ -47,11 +47,11 @@ export default function Projects() {
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
           My Projects
         </h2>
-        <p className="mt-4 text-lg text-muted-foreground">
+        <p className="mt-4 mx-10 text-lg text-muted-foreground">
           Check out some of my recent work. These projects showcase my skills
           and experience.
         </p>
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 pt-12 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto flex max-w-5xl flex-col gap-8 pt-12">
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden justify-between">
               <div className="relative aspect-video overflow-hidden">
@@ -66,7 +66,7 @@ export default function Projects() {
                 <CardDescription>{project.description}</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 justify-center">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
@@ -77,7 +77,7 @@ export default function Projects() {
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="flex gap-2">
+              <CardFooter className="flex flex-row-reverse gap-2">
                 <Button size="sm" variant="outline" asChild>
                   <a
                     href={project.githubUrl}
@@ -102,12 +102,6 @@ export default function Projects() {
             </Card>
           ))}
           <Card className="flex flex-col justify-center overflow-hidden">
-            <div className="relative aspect-video overflow-hidden flex justify-center">
-              <img
-                src={"/plus.svg"}
-                className="size-30 bg-white p-2 rounded-full"
-              />
-            </div>
             <CardHeader>
               <CardTitle>More to come...</CardTitle>
               <CardDescription>

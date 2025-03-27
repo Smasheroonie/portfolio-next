@@ -59,7 +59,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-12 md:py-24 lg:py-32 bg-muted/50">
-      <div className="mx-auto grid max-w-5xl gap-12 lg:grid-cols-2 px-4 md:px-6">
+      <div className="mx-10 lg:m-auto grid max-w-5xl gap-12 lg:grid-cols-2 px-4 md:px-6">
         <div className="flex flex-col justify-center space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Get In Touch
@@ -88,6 +88,7 @@ export default function Contact() {
                   href="https://github.com/Smasheroonie"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="w-16"
                 >
                   <FaGithub className="h-5 w-5" />
                   <span className="sr-only">GitHub</span>
@@ -98,6 +99,7 @@ export default function Contact() {
                   href="https://www.linkedin.com/in/lukenunogoncalves/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="w-16"
                 >
                   <FaLinkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
