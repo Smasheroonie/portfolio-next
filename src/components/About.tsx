@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function About() {
   return (
     <section id="about" className="py-12 md:py-24 lg:py-32">
@@ -12,6 +14,7 @@ export default function About() {
           mobile and beyond. I focus on creating clean, efficient, and
           accessible applications with contemporary flare.
         </p>
+        <Image src="/luke.jpeg" alt="me" width={300} height={5} />
       </div>
     </section>
   );

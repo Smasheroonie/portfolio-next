@@ -118,3 +118,31 @@
     @apply bg-background text-foreground;
   }
 }
+
+@theme {
+  --animate-gradient: gradient 4s linear infinite;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    oklch(0.723 0.219 149.579),
+    oklch(0.623 0.214 259.815),
+    oklch(0.667 0.295 322.15),
+    oklch(0.623 0.214 259.815),
+    oklch(0.723 0.219 149.579),
+    oklch(0.623 0.214 259.815),
+    oklch(0.667 0.295 322.15)
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+}
